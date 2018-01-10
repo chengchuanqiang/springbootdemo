@@ -1,4 +1,4 @@
-package com.ccq;
+package com.ccq.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
