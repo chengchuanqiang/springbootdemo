@@ -49,4 +49,8 @@ public class CatController {
     public List<Cat> findMyCatName(String catName){
         return catService.findMyCatName(catName);
     }
+    @RequestMapping("/selectByCatName")
+    public List<Cat> selectByCatName(String catName){
+        return catService.selectByCatName(catName);
+    }
 }

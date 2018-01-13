@@ -1,5 +1,6 @@
 package com.ccq.service;
 
+import com.ccq.dao.CatDao;
 import com.ccq.entity.Cat;
 import com.ccq.repository.CatRepository;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,9 @@ public class CatService {
 
     @Resource
     private CatRepository catRepository;
+
+    @Resource
+    private CatDao catDao;
 
     @Transactional
     public Cat save(Cat cat){
@@ -42,6 +46,10 @@ public class CatService {
 
     public List<Cat> findMyCatName(String catName){
         return catRepository.findMyCatName(catName);
+    }
+
+    public List<Cat> selectByCatName(String catName){
+        return catDao.selectByCatName(catName);
     }
 
 }
