@@ -19,4 +19,11 @@ public class TemplatesController {
         map.put("name","Tom");
         return "hello";
     }
+
+    @RequestMapping("/helloFtl")
+    public String helloFtl(Map<String,Object> map){
+        map.put("name","Tom");
+
+        return "helloFtl";
+    }
 }
