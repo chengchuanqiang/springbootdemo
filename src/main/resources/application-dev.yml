@@ -1,3 +1,7 @@
 
 server:
   port: 8080
+  context-path: /springbootdemo
+spring:
+  thymeleaf:
+    cache: false
