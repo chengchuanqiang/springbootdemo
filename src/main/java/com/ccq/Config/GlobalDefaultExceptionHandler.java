@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author ccq
- * @Description
+ * @Description 全局捕捉异常
  * @date 2018/1/13 16:03
  */
 @ControllerAdvice
