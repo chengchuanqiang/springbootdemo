@@ -1,9 +1,8 @@
 package com.ccq.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+
+import javax.persistence.*;
 
 /**
  * @author ccq
@@ -11,6 +10,7 @@ import javax.persistence.Id;
  * @date 2018/1/10 23:04
  */
 @Entity
+@Table(name = "cat")
 public class Cat {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)

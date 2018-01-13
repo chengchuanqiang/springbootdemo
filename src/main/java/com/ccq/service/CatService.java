@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 
 /**
@@ -34,4 +35,13 @@ public class CatService {
         Iterable<Cat> cats = catRepository.findAll();
         return cats;
     }
+
+    public List<Cat> findByCatName(String catName){
+        return catRepository.findByCatName(catName);
+    }
+
+    public List<Cat> findMyCatName(String catName){
+        return catRepository.findMyCatName(catName);
+    }
+
 }
